@@ -1,0 +1,12 @@
+name = "emails"
+main = "src/index.ts"
+compatibility_date = "2025-10-14"
+
+send_email = [
+    { name = "MAILER", destination_address = "karan.ravindra1213@gmail.com", allowed_sender_addresses = [
+        "no-reply@karanravindra.com",
+    ] },
+]
+
+[observability.logs]
+enabled = true
