@@ -49,7 +49,7 @@ export default {
 			});
 			mime.setRecipient("you@watts.ai");
 			mime.setSubject(subject || `Message from ${name || "Contact Form"}`);
-			mime.addHeader("Reply-To", `${name || "Visitor"} <${email}>`);
+			mime.setHeader("Reply-To", `${name || "Visitor"} <${email}>`);
 			mime.addMessage({
 				contentType: "text/plain",
 				data: `From: ${name} <${email}>\n\n${message}`,
